@@ -1,33 +1,19 @@
-# 🧠 Multi-Agent AI System with PHI, Gemini, and Groq
+# Multi-Agent AI System using PHI, Gemini, and Groq
 
-This project demonstrates a multi-agent system using the [PHI](https://github.com/typetheta/phi) framework. It integrates Google's **Gemini**, **Groq** models, and various tools for **financial analysis**, **web scraping**, and **multi-agent collaboration**.
+This project implements a multi-agent architecture using the [PHI](https://github.com/typetheta/phi) framework, combining Google's Gemini models, Groq LLMs, and custom tools for structured financial data extraction and web scraping.
 
----
+## Overview
 
-## 🚀 Features
+The system is composed of the following agents:
 
-- 🔍 **Financial Analysis Agent**
-  - Uses Gemini model
-  - Integrated with `YFinanceTools` to fetch:
-    - ✅ Stock prices
-    - ✅ Analyst recommendations
-    - ✅ Stock fundamentals
-  - Outputs data in **markdown tables**
+- **Finance Agent**: Queries financial data including stock prices, fundamentals, and analyst recommendations using Gemini and YFinanceTools.
+- **Web Agent**: Scrapes and summarizes web content using Crawl4aiTools or WebsiteTools, powered by either Gemini or Groq models.
+- **Team Agent**: Coordinates multiple agents to handle complex queries that require information retrieval and structured presentation.
 
-- 🌐 **Web Scraping Agent**
-  - Powered by Gemini or Groq models
-  - Uses `Crawl4aiTools` and `WebsiteTools`
-  - Scrapes and summarizes web content
+## Agents Configuration
 
-- 🤖 **Team Agent Collaboration**
-  - Coordinates multiple agents (`webAgent`, `financeAgent`)
-  - Combines results with markdown formatting and cited sources
+### Finance Agent
 
----
-
-## 🧠 Agents Overview
-
-### 📊 Finance Agent
 ```python
 from phi.agent import Agent
 from phi.model.google import Gemini
