@@ -1,6 +1,6 @@
 # Multi-Agent AI System using PHI, Gemini, and Groq
 
-This project implements a multi-agent architecture using the [PHI](https://github.com/typetheta/phi) framework, combining Google's Gemini models, Groq LLMs, and custom tools for structured financial data extraction and web scraping.
+This project implements a multi-agent architecture using the [PHI](https://docs.phidata.com/introduction) framework, combining Google's Gemini models, Groq LLMs, and custom tools for structured financial data extraction and web scraping.
 
 ## Overview
 
